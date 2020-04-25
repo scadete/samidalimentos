@@ -3414,15 +3414,16 @@ header.coffee-2 .navigation-filter .website-search .filter-search .categories-se
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 80%;
           height: 267px;
           min-height: 267px; }
-          .slider_v2 .slider_wrapper .slider-block .slider-content .slider_headline .slider_text_area h1 {
-            color: #FFF;
-            font-size: 3em; }
-          .slider_v2 .slider_wrapper .slider-block .slider-content .slider_headline .slider_text_area h2 {
-            color: #FFF;
-            font-size: 1.5em; }
+          .slider_v2 .slider_wrapper .slider-block .slider-content .slider_headline .slider_text_area .text_container {
+            width: 70%; }
+            .slider_v2 .slider_wrapper .slider-block .slider-content .slider_headline .slider_text_area .text_container h1 {
+              color: #FFF;
+              font-size: 2.4rem; }
+            .slider_v2 .slider_wrapper .slider-block .slider-content .slider_headline .slider_text_area .text_container h2 {
+              color: #FFF;
+              font-size: 1.2rem; }
   .slider_v2 .slick-arrow {
     background-color: #73BA9B;
     color: #fff;
