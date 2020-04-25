@@ -65,8 +65,9 @@
               <div class="col-12 col-lg-3">
                 <div class="nav-right_block">
                   <div class="form website-search_coffee">
-                    <input class="round-input no-border" type="text" placeholder="Pesquisar na página">
-                    <button class="normal-btn black"><i class="icon_search" onclick="window.find('ogami')"></i></button>
+                    <input id ="searchInput" class="round-input no-border" type="text" placeholder="Encontrar na página" onsubmit="window.find(document.getElementById('#searchInput').value)">
+                    <button class="normal-btn black"><i class="icon_search" onclick="window.find(document.getElementById('searchInput').value)"></i></button>
+                  
                   </div>
                 </div>
               </div>
@@ -241,7 +242,7 @@
                       <div class="product coffee"><a class="product-img"><img src="assets/images/product/product01.jpg" alt=""></a>
                         <h5 class="product-type">Bebidas</h5>
                         <h3 class="product-name">Sucos Naturais</h3>
-                        <button class="no-round-btn coffee" onclick="window.open('http://api.whatsapp.com/send?phone=91MOBILE_NUMBER&text=WHATEVER_LINK_OR_TEXT_YOU_WANT_TO_SEND', '_blank')">Fazer pedido <i class="fab fa-whatsapp"> </i></button>
+                        <button class="no-round-btn coffee" onclick="$.sendProductWpp('Sucos naturais')">Fazer pedido <i class="fab fa-whatsapp"> </i></button>
                       </div>
                     </div>
                     
@@ -249,7 +250,7 @@
                       <div class="product coffee"><a class="product-img"><img src="assets/images/product/product02.jpg" alt=""></a>
                         <h5 class="product-type">Bebidas</h5>
                         <h3 class="product-name">Chás com Fruta</h3>
-                        <button class="no-round-btn coffee" onclick="window.open('http://api.whatsapp.com/send?phone=91MOBILE_NUMBER&text=WHATEVER_LINK_OR_TEXT_YOU_WANT_TO_SEND', '_blank')">Fazer pedido <i class="fab fa-whatsapp"> </i></button>
+                        <button class="no-round-btn coffee" onclick="$.sendProductWpp('Chás com fruta')">Fazer pedido <i class="fab fa-whatsapp"> </i></button>
                       </div>
                     </div>
 
@@ -257,7 +258,7 @@
                       <div class="product coffee"><a class="product-img"><img src="assets/images/product/product03.jpg" alt=""></a>
                         <h5 class="product-type">Bebidas</h5>
                         <h3 class="product-name">Vinhos</h3>
-                        <button class="no-round-btn coffee" onclick="window.open('http://api.whatsapp.com/send?phone=91MOBILE_NUMBER&text=WHATEVER_LINK_OR_TEXT_YOU_WANT_TO_SEND', '_blank')">Fazer pedido <i class="fab fa-whatsapp"> </i></button>
+                        <button class="no-round-btn coffee" onclick="$.sendProductWpp('Vinhos')">Fazer pedido <i class="fab fa-whatsapp"> </i></button>
                       </div>
                     </div>
 
@@ -265,7 +266,7 @@
                       <div class="product coffee"><a class="product-img"><img src="assets/images/product/product04.jpg" alt=""></a>
                         <h5 class="product-type">Doces</h5>
                         <h3 class="product-name">Doce Diet em Pote</h3>
-                        <button class="no-round-btn coffee" onclick="window.open('http://api.whatsapp.com/send?phone=91MOBILE_NUMBER&text=WHATEVER_LINK_OR_TEXT_YOU_WANT_TO_SEND', '_blank')">Fazer pedido <i class="fab fa-whatsapp"> </i></button>
+                        <button class="no-round-btn coffee" onclick="$.sendProductWpp('Doces Diet em Pote')">Fazer pedido <i class="fab fa-whatsapp"> </i></button>
                       </div>
                     </div>
                     
@@ -273,7 +274,7 @@
                       <div class="product coffee"><a class="product-img"><img src="assets/images/product/product05.jpg" alt=""></a>
                         <h5 class="product-type">Doces</h5>
                         <h3 class="product-name">Bananinha Sem Açúcar</h3>
-                        <button class="no-round-btn coffee" onclick="window.open('http://api.whatsapp.com/send?phone=91MOBILE_NUMBER&text=WHATEVER_LINK_OR_TEXT_YOU_WANT_TO_SEND', '_blank')">Fazer pedido <i class="fab fa-whatsapp"> </i></button>
+                        <button class="no-round-btn coffee" onclick="$.sendProductWpp('Bananinha sem açúcar')">Fazer pedido <i class="fab fa-whatsapp"> </i></button>
                       </div>
                     </div>
 
@@ -281,14 +282,14 @@
                       <div class="product coffee"><a class="product-img"><img src="assets/images/product/product06.jpg" alt=""></a>
                         <h5 class="product-type">Aperitivos</h5>
                         <h3 class="product-name">Queijos Desidratados</h3>
-                        <button class="no-round-btn coffee" onclick="window.open('http://api.whatsapp.com/send?phone=91MOBILE_NUMBER&text=WHATEVER_LINK_OR_TEXT_YOU_WANT_TO_SEND', '_blank')">Fazer pedido <i class="fab fa-whatsapp"> </i></button>
+                        <button class="no-round-btn coffee" onclick="$.sendProductWpp('Queijos desidratados')">Fazer pedido <i class="fab fa-whatsapp"> </i></button>
                       </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-3">
                       <div class="product coffee"><a class="product-img"><img src="assets/images/product/product07.jpg" alt=""></a>
                         <h5 class="product-type">Aperitivos</h5>
                         <h3 class="product-name">Biscoito Sequilhos</h3>
-                        <button class="no-round-btn coffee" onclick="window.open('http://api.whatsapp.com/send?phone=91MOBILE_NUMBER&text=WHATEVER_LINK_OR_TEXT_YOU_WANT_TO_SEND', '_blank')">Fazer pedido <i class="fab fa-whatsapp"> </i></button>
+                        <button class="no-round-btn coffee" onclick="$.sendProductWpp('Biscoito sequilhos')">Fazer pedido <i class="fab fa-whatsapp"> </i></button>
                       </div>
                     </div>
 
@@ -296,7 +297,7 @@
                       <div class="product coffee"><a class="product-img"><img src="assets/images/product/product08.jpg" alt=""></a>
                         <h5 class="product-type">Encomendas</h5>
                         <h3 class="product-name">Bolo de Rolo</h3>
-                        <button class="no-round-btn coffee" onclick="window.open('http://api.whatsapp.com/send?phone=91MOBILE_NUMBER&text=WHATEVER_LINK_OR_TEXT_YOU_WANT_TO_SEND', '_blank')">Fazer pedido <i class="fab fa-whatsapp"> </i></button>
+                        <button class="no-round-btn coffee" onclick="$.sendProductWpp('Bolos de rolo')">Fazer pedido <i class="fab fa-whatsapp"> </i></button>
                       </div>
                     </div>
                     <!-- End product items -->
@@ -376,6 +377,10 @@
       <!-- End deak of the week-->
       <div class="contact-us" id="contato">
         <div class="container">
+          <div class="leave-message">
+            <h1 class="title">Enviar mensagem</h1>
+            <p>Agradecidos pelo contato, responderemos rapidamente seus questionamentos.</p>
+          </div>
           <div class="contact-method">
             <div class="row">
               <div class="col-12 col-md-4">
@@ -389,7 +394,7 @@
               <div class="col-12 col-md-4">
                 <div class="method-block"><i class="icon_mail_alt"></i>
                   <div class="method-block_text">
-                    <p><span>WhatsApp:</span> (81) 9-9999-9999 </p>
+                    <p><span>WhatsApp:</span> (81) 9-9840-1631</p>
                     <p><span>E-mail:</span> contato@samidalimentos.com.br</p>
                   </div>
                 </div>
@@ -404,23 +409,6 @@
               </div>
             </div>
           </div>
-          <div class="leave-message">
-            <h1 class="title">Enviar mensagem</h1>
-            <p>Agradecidos pelo contato, responderemos rapidamente seus questionamentos.</p>
-            <form action="" method="post">
-              <div class="row">
-                <div class="col-12 col-md-6">
-                  <input class="no-round-input" type="text" placeholder="Name">
-                </div>
-                <div class="col-12 col-md-6">
-                  <input class="no-round-input" type="email" placeholder="Email">
-                </div>
-                <div class="col-12">
-                  <textarea class="textarea-form" name="" cols="30" rows="10" placeholder="Your message"></textarea>
-                </div>
-              </div>
-            </form>
-          </div>
         </div>
       </div>
       <!-- End contact us-->
@@ -431,10 +419,10 @@
               <div class="footer-logo"><img src="assets/images/logo.png" alt=""></div>
               <div class="footer-contact">
                 <p>Entregas: Camaragibe, PE / Recife, PE</p>
-                <p>Telefone: (81) 9-9999-9999</p>
+                <p>Telefone: (81) 9-9840-1631</p>
                 <p>E-mail: contato@samidalimentos.com.br</p>
               </div>
-              <div class="footer-social"><a class="round-icon-btn coffee" href=""><i class="fab fa-facebook-f"> </i></a><a class="round-icon-btn coffee" href=""><i class="fab fa-instagram"></i></a><a class="round-icon-btn coffee" href=""><i class="fab fa-whatsapp"> </i></a></div>
+              <div class="footer-social"><a class="round-icon-btn coffee" href="https://facebook.com/samidalimentos" target="_blank"><i class="fab fa-facebook-f"> </i></a><a class="round-icon-btn coffee" href="https://www.instagram.com/samidalimentos/" target="_blank"><i class="fab fa-instagram"></i></a><a class="round-icon-btn coffee" href="#" onclick="$.sendDefaultWpp()"><i class="fab fa-whatsapp"> </i></a></div>
             </div>
             <div class="col-md-8">
               <div class="row">

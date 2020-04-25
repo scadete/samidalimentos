@@ -527,6 +527,24 @@ window.onload = function () {
 			$('#quickview-close-btn').on('click', function(event) {
 				$('#quickview').remove()
 			});
+
 		});
+		
+		/**
+		 * Messages
+		 */
+
+		$.sendWpp = function(message) {
+			var contactNumber = '5581998401631';
+			window.open('http://api.whatsapp.com/send?phone=' + contactNumber + '&text=' + 
+			message, '_blank')
+		}
+
+		$.sendProductWpp = function(productDescription) {
+			$.sendWpp("Olá, tenho interesse no produto *" + productDescription + "* que vi no website e gostaria de mais informações.")
+		}
+		$.sendDefaultWpp = function() {
+			$.sendWpp("Olá, estou entrando em contato a partir do website da Samid.")
+		}
 	});
 }
