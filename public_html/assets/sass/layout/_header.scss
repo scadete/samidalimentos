@@ -431,7 +431,10 @@ header.coffee {
 	    left: 0;
 	    z-index: 100;
 	    width: 100%;
-        background-color: rgba(0, 0, 0, 0.72);
+		background-color: rgba(0, 0, 0, 0.72);
+		img {
+			height: 48px;
+		}
         .navgition-menu {
 			ul {
 				.toggleable {

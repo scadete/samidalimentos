@@ -124,11 +124,31 @@
 				margin-top: 0;
 				display: flex;
 				align-items: center;
+				width: 100%;
 				.slider_img {
 					margin-bottom: 60px;
 					img {
 						max-height: 270px;
 					}	
+				}
+				.slider_headline {
+					margin-bottom: 60px;
+					.slider_text_area {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: 80%;
+						height:267px;
+						min-height: 267px;
+						h1 {
+							color: #FFF;
+							font-size: 3em;
+						}
+						h2 {
+							color: #FFF;
+							font-size: 1.5em;
+						}
+					}
 				}
 			}
 		}
